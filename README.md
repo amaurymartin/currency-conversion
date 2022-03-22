@@ -38,3 +38,17 @@ https://api-coding-challenge.neofinancial.com/currency-conversion?seed=12454
 ## Submit Your Solution
 Zip the completed exercise and upload the file.
 Please no node_modules or .git directories.
+
+## Solution
+
+To run the solution, ruby is required. After installing it, just run on terminal:
+```
+ruby start.rb
+```
+
+This will generate a CSV file named **currency_conversion.csv**
+
+PS: It was quite interesting to notice that for some currencies that we have a direct conversion
+(eg CAD -> HKD) an indirect conversion has a more attractive rate.
+For these cases, my algorithm chooses the best rate dispite this direct conversion
+since the challenge didn't ask to choose the direct conversion whenever possible.
